@@ -18,15 +18,20 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://proton.in";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "PROTON — The control core of every screen",
+  title: "PROTON — Complete LED Signage Solutions, Made in India",
   description:
-    "PROTON builds the control layer of LED video — receiving cards, sending controllers, video processors and software. Made in India, engineered for the world.",
+    "PROTON delivers complete LED signage solutions — displays, in-house control electronics, in-house CMS, and local install & service. The only Indian LED signage solution with control + CMS built in-house.",
   keywords: [
-    "LED display control system",
+    "LED signage India",
+    "LED display India",
+    "digital signage CMS",
+    "LED video wall",
     "receiving card",
-    "sending card",
     "LED controller",
     "video processor",
+    "fine pitch LED",
+    "outdoor LED display",
+    "rental LED",
     "Made in India",
     "PROTON",
   ],
@@ -34,9 +39,9 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "PROTON — The control core of every screen",
+    title: "PROTON — Complete LED Signage Solutions, Made in India",
     description:
-      "India-first LED display control systems: receiving cards, controllers, processors and software.",
+      "Displays, control electronics, CMS, and install & service — one Indian partner, control + CMS built in-house.",
     type: "website",
     url: SITE_URL,
     siteName: "PROTON",
@@ -44,9 +49,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PROTON — The control core of every screen",
+    title: "PROTON — Complete LED Signage Solutions, Made in India",
     description:
-      "India-first LED display control systems: receiving cards, controllers, processors and software.",
+      "Displays, control electronics, CMS, and install & service — one Indian partner, control + CMS built in-house.",
   },
 };
 

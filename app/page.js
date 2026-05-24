@@ -15,19 +15,20 @@ export default function Home() {
       <header id="top" className="hero">
         <div className="container hero-grid">
           <div>
-            <span className="eyebrow">● LED Display Electronics · Made in India</span>
+            <span className="eyebrow">● Complete LED Signage Solutions · Made in India</span>
             <h1>
-              The control core of <span className="accent">every screen.</span>
+              LED signage, engineered <span className="accent">end to end in India.</span>
             </h1>
             <p className="lead">
-              PROTON makes the electronics and software that power LED video walls —
-              the parts inside that turn a wall of LED panels into one big, sharp
-              picture. Designed in India, sold in rupees, supported by people you
-              can actually call.
+              PROTON delivers the whole signage solution — the LED display, the
+              control electronics that drive it, the software to manage your
+              content, and local install &amp; service. The control system and
+              the CMS are built in-house, by us. One partner. One accountable
+              team. Designed in India, sold in rupees.
             </p>
             <div className="hero-cta">
-              <a className="btn btn-primary" href="#products">See our products</a>
-              <a className="btn btn-ghost" href="#market">Why now</a>
+              <a className="btn btn-primary" href="#products">See what we build</a>
+              <a className="btn btn-ghost" href="/solutions">Solutions by use case</a>
             </div>
           </div>
 
@@ -43,76 +44,161 @@ export default function Home() {
 
         <div className="container">
           <div className="stats">
-            <div className="stat"><div className="num">~55%</div><div className="lab">Healthy hardware margin</div></div>
-            <div className="stat"><div className="num">12–18 mo</div><div className="lab">From idea to shipping</div></div>
-            <div className="stat"><div className="num">₹700–1,000 Cr</div><div className="lab">India market we serve</div></div>
-            <div className="stat"><div className="num">In stock</div><div className="lab">Local, BIS-ready</div></div>
+            <div className="stat"><div className="num">₹7,000+ Cr</div><div className="lab">India LED signage market we address</div></div>
+            <div className="stat"><div className="num">5</div><div className="lab">Display families — indoor, outdoor, rental, all-in-one, creative</div></div>
+            <div className="stat"><div className="num">Control + CMS</div><div className="lab">Built in-house, in India</div></div>
+            <div className="stat"><div className="num">In stock</div><div className="lab">Local, BIS-ready, INR pricing</div></div>
           </div>
         </div>
       </header>
 
-      {/* PRODUCTS */}
+      {/* PRODUCTS — three tiers */}
       <section id="products">
         <div className="container">
           <div className="section-head">
-            <div className="kicker">What we make</div>
-            <h2>Four product families. One job — your wall looks great.</h2>
+            <div className="kicker">What we build</div>
+            <h2>One stack. Three tiers. Pick where you join.</h2>
             <p>
-              A small board that goes inside every panel. A box that drives the
-              whole wall. A bigger box for huge displays. And software that ties
-              it all together.
+              We make the electronics that run an LED wall, the complete display
+              built around them, and the software that manages content across a
+              network. Buy the part, the whole display, or the managed signage
+              service — same engineering team behind all three.
             </p>
           </div>
 
+          {/* Tier 1 — Components */}
+          <div className="tier-head">
+            <div className="tier-badge">Tier 1</div>
+            <h3>Components — for panel makers &amp; integrators</h3>
+            <p>The in-house control electronics and LED modules. The pieces that go inside someone else&apos;s wall.</p>
+          </div>
           <div className="products">
             <div className="pcard">
               <div className="tag">RX Series · Inside the panel</div>
-              <h3>The brain inside every panel</h3>
+              <h3>Receiving cards</h3>
               <p className="sub">A small board that fits inside every LED cabinet and lights up the pixels.</p>
               <ul>
-                <li><b>RX-1</b> — for everyday signage: shops, offices, lobbies.</li>
-                <li><b>RX-Pro</b> — for studios and rental events where every frame matters.</li>
-                <li><b>RX-COB</b> — for premium, ultra-fine displays you can sit close to.</li>
+                <li><b>RX-1</b> — everyday signage: shops, offices, lobbies.</li>
+                <li><b>RX-Pro</b> — studios and rental events where every frame matters.</li>
+                <li><b>RX-COB</b> — premium ultra-fine displays you can sit close to.</li>
               </ul>
               <div className="price">From <b>₹1,500</b> per board for integrators</div>
             </div>
 
             <div className="pcard">
               <div className="tag">TX Series · Drives the whole wall</div>
-              <h3>The box that runs the wall</h3>
+              <h3>Sending controllers</h3>
               <p className="sub">Takes your video (laptop, camera, player) and sends it to every panel — in sync.</p>
               <ul>
-                <li><b>TX-1</b> — entry-level box for small and mid-size walls.</li>
-                <li><b>TX-4K</b> — pro box for big 4K walls, tours, and broadcast.</li>
+                <li><b>TX-1</b> — small and mid-size walls.</li>
+                <li><b>TX-4K</b> — big 4K walls, tours, broadcast.</li>
               </ul>
               <div className="price">From <b>₹35,000</b> per controller</div>
             </div>
 
             <div className="pcard">
               <div className="tag">ONE &amp; VX · Big-wall processing</div>
-              <h3>For huge or multi-source walls</h3>
+              <h3>Video processors</h3>
               <p className="sub">When the wall is enormous, or you want many videos on it at once.</p>
               <ul>
-                <li><b>PROTON ONE</b> — processor and controller in a single box.</li>
+                <li><b>PROTON ONE</b> — processor and controller in one box.</li>
                 <li><b>PROTON VX</b> — separate processor for stadiums, airports, control rooms.</li>
               </ul>
               <div className="price">Roadmap <b>V2</b></div>
             </div>
 
             <div className="pcard">
-              <div className="tag">Studio &amp; Cloud · Software</div>
-              <h3>Set up &amp; monitor the wall</h3>
-              <p className="sub">Apps that make the hardware easy to install and easy to keep an eye on.</p>
+              <div className="tag">LED Modules &amp; Cabinets</div>
+              <h3>Panels &amp; cabinets</h3>
+              <p className="sub">Indoor, outdoor and rental modules — sourced and qualified by us, tuned to work with PROTON control.</p>
               <ul>
-                <li><b>PROTON Studio</b> — desktop app to lay out and color-match the wall on-site.</li>
-                <li><b>PROTON Cloud</b> — web dashboard to watch your walls from anywhere.</li>
+                <li>Pitches from <b>P0.9 to P10</b></li>
+                <li>SMD, COB and chip-on-board options</li>
+                <li>Pre-matched with RX cards for fast install</li>
               </ul>
-              <div className="price">Studio is included · Cloud is a subscription</div>
+              <div className="price">Volume pricing for OEMs &amp; integrators</div>
+            </div>
+          </div>
+
+          {/* Tier 2 — Complete displays */}
+          <div className="tier-head" style={{ marginTop: 56 }}>
+            <div className="tier-badge tier-2">Tier 2</div>
+            <h3>Complete displays — for integrators &amp; end customers</h3>
+            <p>Five named display families that bundle modules, control, and software — ready to install.</p>
+          </div>
+          <div className="products">
+            <div className="pcard">
+              <div className="tag">PROTON Indoor · P0.9–P2.5</div>
+              <h3>Fine-pitch indoor walls</h3>
+              <p className="sub">Retail flagships, lobbies, control rooms, broadcast and virtual production (XR) stages.</p>
+              <div className="price"><b>Sweet spot:</b> seamless walls people stand close to</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">PROTON Outdoor · P3–P10</div>
+              <h3>Outdoor &amp; high-brightness</h3>
+              <p className="sub">Billboards, transit hubs, stadium fascias, building facades — built for sun and rain.</p>
+              <div className="price"><b>Sweet spot:</b> bright, weather-rated, long life</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">PROTON Rental · P2.6–P4.8</div>
+              <h3>Rental &amp; staging</h3>
+              <p className="sub">Fast-lock cabinets for concerts, corporate events and touring shows. Cases included.</p>
+              <div className="price"><b>Sweet spot:</b> rig fast, tear down faster</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">PROTON All-in-One · Fixed units</div>
+              <h3>All-in-one displays</h3>
+              <p className="sub">110&quot; meeting walls, LED posters and totems — single-SKU, plug-in-and-play.</p>
+              <div className="price"><b>Sweet spot:</b> SMB, QSR, meeting rooms</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">PROTON Creative · Transparent / flexible / COB</div>
+              <h3>Creative displays</h3>
+              <p className="sub">Transparent walls, curved and flexible modules, COB fine-pitch — for retail and architecture.</p>
+              <div className="price"><b>Sweet spot:</b> design-led installs that stand out</div>
+            </div>
+          </div>
+          <p className="tier-note">
+            Transparent and fine-pitch are the fastest-growing LED segments today; video walls
+            remain the largest fixed-install category.
+          </p>
+
+          {/* Tier 3 — Software & Services */}
+          <div className="tier-head" style={{ marginTop: 56 }}>
+            <div className="tier-badge tier-3">Tier 3</div>
+            <h3>Software &amp; services — to keep it all running</h3>
+            <p>Our CMS, players, install &amp; AMC, plus a managed monthly plan if you&apos;d rather not own the hardware outright.</p>
+          </div>
+          <div className="products">
+            <div className="pcard">
+              <div className="tag">PROTON CMS · Subscription</div>
+              <h3>Content management, in-house</h3>
+              <p className="sub">Schedule playlists, push to multi-site networks, use templates, monitor uptime, get alerts, see analytics — from one dashboard.</p>
+              <div className="price">From <b>₹999 / month</b> per screen</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">Built-in players · Android / SoC</div>
+              <h3>No separate media PC</h3>
+              <p className="sub">PROTON displays ship with an integrated Android or SoC player — fewer boxes, fewer cables, simpler installs.</p>
+              <div className="price">Included with displays</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">Install · Calibration · AMC</div>
+              <h3>People you can call</h3>
+              <p className="sub">Site survey, install, on-site color calibration, and annual maintenance contracts — across India.</p>
+              <div className="price">Per-site quote · multi-year AMC available</div>
+            </div>
+            <div className="pcard">
+              <div className="tag">Signage-as-a-Service</div>
+              <h3>Monthly plan — hardware + CMS + AMC</h3>
+              <p className="sub">Bundle the display, control, software and service into one monthly fee. Financing-friendly — a real adoption driver in India.</p>
+              <div className="price">Pricing on request</div>
             </div>
           </div>
 
           <div className="products-more">
             <a className="btn btn-ghost" href="/products">See each product in detail →</a>
+            <a className="btn btn-ghost" href="/solutions">Pick a packaged solution →</a>
           </div>
         </div>
       </section>
@@ -150,33 +236,37 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div className="kicker">The opportunity</div>
-            <h2>India buys these from abroad today. We want to change that.</h2>
+            <h2>A ~₹7,500 Cr Indian signage market, growing double digits.</h2>
             <p>
-              Almost every LED display electronics part in India is imported.
-              Rising tariffs and India's electronics push make a local supplier
-              the obvious next move — that's where PROTON fits in.
+              India&apos;s digital signage market is roughly ₹7,500 Cr (2024)
+              and compounding at 10–14% a year. LED display hardware alone is
+              about ₹6,800 Cr of it. Most of that is still imported — and India
+              is now pushing hard on local electronics. That&apos;s the window
+              PROTON is built for.
             </p>
           </div>
           <div className="market">
             <div className="market-card">
               <h4 className="card-h">How big is the market?</h4>
               <div className="funnel">
-                <div className="frow"><span className="l">Total India market</span><span className="v">₹700–1,000 Cr</span></div>
-                <div className="frow"><span className="l">Segments we can sell to</span><span className="v">₹450–650 Cr</span></div>
-                <div className="frow"><span className="l">What we can realistically win by Yr 3</span><span className="v">₹35–45 Cr</span></div>
+                <div className="frow"><span className="l">TAM — complete LED signage</span><span className="v">₹7,000–8,500 Cr</span></div>
+                <div className="frow"><span className="l">SAM — segments we serve</span><span className="v">₹3,200–4,500 Cr</span></div>
+                <div className="frow"><span className="l">Target by Year 5 (most likely)</span><span className="v">₹80–110 Cr</span></div>
               </div>
               <p className="card-note">
-                Electronics are about 8–15% of an LED display's cost. Figures are planning estimates, not a forecast.
+                This is ~8–10× the control-only opportunity — bigger absolute
+                revenue at a lower % share because it&apos;s a larger, more
+                competitive market. Planning estimates, not a forecast.
               </p>
             </div>
             <div className="market-card">
               <h4 className="card-h">Where we could be in 5 years</h4>
-              <div className="scenario s-cons"><span>Cautious</span><span className="pct">~3% · ₹15–20 Cr</span></div>
-              <div className="scenario s-base"><span>Most likely</span><span className="pct">~7% · ₹35–45 Cr</span></div>
-              <div className="scenario s-agg"><span>Ambitious</span><span className="pct">~12–15% · ₹70–95 Cr</span></div>
+              <div className="scenario s-cons"><span>Cautious</span><span className="pct">~1.5% of SAM · ₹50–65 Cr</span></div>
+              <div className="scenario s-base"><span>Most likely</span><span className="pct">~2.5% of SAM · ₹80–110 Cr</span></div>
+              <div className="scenario s-agg"><span>Ambitious</span><span className="pct">~3.5–4% of SAM · ₹130–180 Cr</span></div>
               <p className="card-note">
-                Even reaching the middle of that range would make PROTON the clear
-                Indian leader in this space.
+                Even the middle scenario would make PROTON a top-five Indian
+                LED signage player.
               </p>
             </div>
           </div>
@@ -188,13 +278,28 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div className="kicker">Why PROTON</div>
-            <h2>Match the imports on quality. Beat them on everything local.</h2>
+            <h2>The only Indian LED signage solution with control + CMS built in-house.</h2>
           </div>
           <div className="features">
-            <div className="feature"><div className="ic">📦</div><h4>In stock, in rupees</h4><p>Local stock. Rupee prices. No customs delays, no currency surprises, no waiting months for spares.</p></div>
-            <div className="feature"><div className="ic">🤝</div><h4>Built for Indian makers</h4><p>We work with Indian panel manufacturers and integrators, tailoring our boards to fit their cabinets and workflow.</p></div>
-            <div className="feature"><div className="ic">🇮🇳</div><h4>Right time, right place</h4><p>India is actively supporting local electronics (ECMS, DLI). The market wants a homegrown option.</p></div>
+            <div className="feature"><div className="ic">🧩</div><h4>One vendor, one stack</h4><p>The control system and the CMS are ours, end-to-end. Tighter integration, fewer fingers to point, one team accountable when something needs to change.</p></div>
+            <div className="feature"><div className="ic">📦</div><h4>In stock, in rupees</h4><p>Local stock. Rupee prices. AMC across India. No customs delays, no currency surprises, no waiting months for spares.</p></div>
+            <div className="feature"><div className="ic">💳</div><h4>Buy it or rent it</h4><p>Take the hardware outright, or take the whole thing as a monthly Signage-as-a-Service plan — display, control, CMS and AMC bundled.</p></div>
+            <div className="feature"><div className="ic">🤝</div><h4>Still good to panel makers</h4><p>Tier-1 components are still sold to panel manufacturers and integrators. Complete displays don&apos;t mean we stop serving the people who make them.</p></div>
+            <div className="feature"><div className="ic">🇮🇳</div><h4>Right time, right place</h4><p>India is actively backing local electronics (ECMS, DLI). The market wants a homegrown option that can stand next to the imports.</p></div>
+            <div className="feature"><div className="ic">🛠</div><h4>People you can call</h4><p>Engineers, calibrators and field techs across the country — same team that designed the product.</p></div>
           </div>
+        </div>
+      </section>
+
+      {/* HOW WE GROW */}
+      <section id="how-we-grow" className="how-strip">
+        <div className="container">
+          <div className="how-inner">
+            <div className="how-step"><span className="how-num">1</span><div><h4>Start with what we own</h4><p>In-house control electronics + CMS. The differentiated bit.</p></div></div>
+            <div className="how-step"><span className="how-num">2</span><div><h4>Deliver complete solutions</h4><p>Bundle in sourced LED modules and ship full displays, installed.</p></div></div>
+            <div className="how-step"><span className="how-num">3</span><div><h4>Manufacture as volume justifies it</h4><p>Move module assembly in-house as India&apos;s ECMS / DLI incentives align with our run-rate.</p></div></div>
+          </div>
+          <p className="how-note">Asset-light to start, manufacturing-led as we scale.</p>
         </div>
       </section>
 
@@ -202,8 +307,8 @@ export default function Home() {
       <section id="contact" className="cta">
         <div className="container">
           <div className="cta-box">
-            <h2>Let's put PROTON inside your next wall.</h2>
-            <p>Panel maker, integrator, or investor — tell us a little about what you&apos;re building and we&apos;ll get back to you.</p>
+            <h2>Let&apos;s spec your next signage rollout.</h2>
+            <p>Retail chain, integrator, transport authority, panel maker, or investor — tell us what you&apos;re building and we&apos;ll come back with the right tier.</p>
             <ContactForm />
           </div>
         </div>
@@ -216,6 +321,7 @@ export default function Home() {
             <a className="brand" href="#top"><Mark />PROTON</a>
             <div className="foot-links">
               <a href="/products">Products</a>
+              <a href="/solutions">Solutions</a>
               <a href="/#technology">Why us</a>
               <a href="/#market">Market</a>
               <a href="/resources">Resources</a>
@@ -227,7 +333,7 @@ export default function Home() {
           </div>
           <p className="disclaimer">
             PROTON is a proposed brand shown for illustration. Product details, prices, and market figures are
-            planning estimates — not a quote, datasheet, or guarantee. "Proton" may be a registered trademark of other
+            planning estimates — not a quote, datasheet, or guarantee. &ldquo;Proton&rdquo; may be a registered trademark of other
             companies in unrelated classes; verify trademark availability before commercial use.
           </p>
         </div>

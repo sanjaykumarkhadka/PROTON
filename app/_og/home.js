@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
-export const alt = "PROTON — The control core of every screen";
+export const alt = "PROTON — Complete LED Signage Solutions, Made in India";
 
 export function render() {
   return new ImageResponse(
@@ -49,7 +49,7 @@ export function render() {
               gap: 14,
             }}
           >
-            <span>The control core of</span>
+            <span>Complete LED signage,</span>
             <span
               style={{
                 background: "linear-gradient(120deg, #4f9dff, #21c8e8)",
@@ -57,12 +57,12 @@ export function render() {
                 color: "transparent",
               }}
             >
-              every screen.
+              engineered end to end in India.
             </span>
           </div>
-          <div style={{ fontSize: 28, color: "#9fb3d1", maxWidth: 860 }}>
-            LED display electronics and software — designed in India,
-            sold in rupees, supported by people you can actually call.
+          <div style={{ fontSize: 28, color: "#9fb3d1", maxWidth: 880 }}>
+            Displays, control electronics, CMS, install &amp; service —
+            one Indian partner. Control + CMS built in-house.
           </div>
         </div>
 
