@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import Mark from "./Mark";
 
 const LINKS = [
-  { href: "/#products", label: "Products" },
+  { href: "/products", label: "Products" },
   { href: "/#technology", label: "Technology" },
   { href: "/#market", label: "Market" },
-  { href: "/#why", label: "Why PROTON" },
+  { href: "/resources", label: "Resources" },
 ];
 
 export default function Nav() {
