@@ -1,5 +1,6 @@
 import Mark from "./_components/Mark";
 import Nav from "./_components/Nav";
+import ContactForm from "./_components/ContactForm";
 
 export default function Home() {
   return (
@@ -202,11 +203,8 @@ export default function Home() {
         <div className="container">
           <div className="cta-box">
             <h2>Let's put PROTON inside your next wall.</h2>
-            <p>Panel maker, integrator, or investor — we'd love to talk. Ask for a sample, a quote, or a chat.</p>
-            <div className="hero-cta" style={{ justifyContent: "center" }}>
-              <a className="btn btn-primary" href="mailto:hello@proton.example">Request a sample</a>
-              <a className="btn btn-ghost" href="mailto:hello@proton.example">Have a chat</a>
-            </div>
+            <p>Panel maker, integrator, or investor — tell us a little about what you&apos;re building and we&apos;ll get back to you.</p>
+            <ContactForm />
           </div>
         </div>
       </section>
@@ -220,7 +218,10 @@ export default function Home() {
               <a href="/products">Products</a>
               <a href="/#technology">Why us</a>
               <a href="/#market">Market</a>
+              <a href="/resources">Resources</a>
               <a href="/#contact">Contact</a>
+              <a href="/privacy">Privacy</a>
+              <a href="/terms">Terms</a>
             </div>
             <div className="foot-copy">© {new Date().getFullYear()} PROTON · Made in India</div>
           </div>

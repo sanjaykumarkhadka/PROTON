@@ -1,5 +1,6 @@
 import Mark from "../_components/Mark";
 import Nav from "../_components/Nav";
+import { RxArt, TxArt, OneArt, SoftwareArt } from "../_components/ProductArt";
 
 export const metadata = {
   title: "Products — PROTON LED Display Electronics",
@@ -38,7 +39,7 @@ export default function ProductsPage() {
       <Nav />
 
       {/* Page header */}
-      <header className="page-head">
+      <header id="top" className="page-head">
         <div className="container">
           <div className="crumb">
             <a href="/">Home</a> <span>/</span> <span>Products</span>
@@ -58,7 +59,7 @@ export default function ProductsPage() {
       {/* RX SERIES */}
       <section id="rx" className="product-section">
         <div className="container">
-          <div className="product-hero">
+          <div className="product-hero with-art">
             <div>
               <div className="kicker">RX Series</div>
               <h2>Receiving cards — the brain inside every panel</h2>
@@ -74,6 +75,7 @@ export default function ProductsPage() {
                 <span className="chip">Auto color &amp; heat tuning</span>
               </div>
             </div>
+            <RxArt />
           </div>
 
           <div className="sku-grid">
@@ -137,7 +139,7 @@ export default function ProductsPage() {
       {/* TX SERIES */}
       <section id="tx" className="product-section alt">
         <div className="container">
-          <div className="product-hero">
+          <div className="product-hero with-art">
             <div>
               <div className="kicker">TX Series</div>
               <h2>Sending controllers — the box that runs the wall</h2>
@@ -153,6 +155,7 @@ export default function ProductsPage() {
                 <span className="chip">Keeps the wall in sync</span>
               </div>
             </div>
+            <TxArt />
           </div>
 
           <div className="sku-grid two">
@@ -200,7 +203,7 @@ export default function ProductsPage() {
       {/* ONE & VX */}
       <section id="one-vx" className="product-section">
         <div className="container">
-          <div className="product-hero">
+          <div className="product-hero with-art">
             <div>
               <div className="kicker">PROTON ONE &amp; VX</div>
               <h2>Processing — for huge or multi-source walls</h2>
@@ -217,6 +220,7 @@ export default function ProductsPage() {
                 <span className="chip">Roadmap V2</span>
               </div>
             </div>
+            <OneArt />
           </div>
 
           <div className="sku-grid two">
@@ -264,7 +268,7 @@ export default function ProductsPage() {
       {/* SOFTWARE */}
       <section id="software" className="product-section alt">
         <div className="container">
-          <div className="product-hero">
+          <div className="product-hero with-art">
             <div>
               <div className="kicker">PROTON Studio &amp; Cloud</div>
               <h2>Software — set it up, then keep an eye on it</h2>
@@ -280,6 +284,7 @@ export default function ProductsPage() {
                 <span className="chip">Remote monitoring</span>
               </div>
             </div>
+            <SoftwareArt />
           </div>
 
           <div className="sku-grid two">
@@ -332,7 +337,7 @@ export default function ProductsPage() {
             <h2>Ready to try one?</h2>
             <p>Tell us a bit about your wall — cabinet size, pixel pitch, how many you need — and we'll send a sample and a tailored quote.</p>
             <div className="hero-cta" style={{ justifyContent: "center" }}>
-              <a className="btn btn-primary" href="mailto:hello@proton.example">Request a sample</a>
+              <a className="btn btn-primary" href="/#contact">Request a sample</a>
               <a className="btn btn-ghost" href="/#market">See the market</a>
             </div>
           </div>
@@ -347,7 +352,10 @@ export default function ProductsPage() {
               <a href="/products">Products</a>
               <a href="/#technology">Why us</a>
               <a href="/#market">Market</a>
+              <a href="/resources">Resources</a>
               <a href="/#contact">Contact</a>
+              <a href="/privacy">Privacy</a>
+              <a href="/terms">Terms</a>
             </div>
             <div className="foot-copy">© {new Date().getFullYear()} PROTON · Made in India</div>
           </div>
