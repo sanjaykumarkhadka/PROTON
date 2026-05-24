@@ -3,13 +3,13 @@ import Nav from "../_components/Nav";
 import { RxArt, TxArt, OneArt, SoftwareArt } from "../_components/ProductArt";
 
 export const metadata = {
-  title: "Products — PROTON LED Display Electronics",
+  title: "Products — PROTON Complete LED Signage Solutions",
   description:
-    "PROTON's product line in plain language: receiving cards, sending controllers, video processors, and software — what they do, who they're for, and what's inside the box.",
+    "Components, complete LED displays, and signage software & services — PROTON's three-tier product line for India, with the control system and CMS built in-house.",
   openGraph: {
-    title: "Products — PROTON LED Display Electronics",
+    title: "Products — PROTON Complete LED Signage Solutions",
     description:
-      "Receiving cards, controllers, processors, and software — engineered in India.",
+      "Components, complete displays, and signage software & services — built in India, control + CMS in-house.",
     type: "website",
   },
 };
@@ -44,17 +44,37 @@ export default function ProductsPage() {
           <div className="crumb">
             <a href="/">Home</a> <span>/</span> <span>Products</span>
           </div>
-          <span className="eyebrow">● The PROTON product line</span>
+          <span className="eyebrow">● Complete LED signage solutions</span>
           <h1>
-            Four product families, <span className="accent">one job done well.</span>
+            Three tiers. <span className="accent">One in-house stack.</span>
           </h1>
           <p className="lead">
-            Small boards that go inside every LED panel. A box that drives the
-            whole wall. A bigger box for huge displays. And software that ties
-            it all together. Here's the lineup, in plain language.
+            PROTON is built in three tiers: the <b>components</b> that go
+            inside every wall, the <b>complete displays</b> built around them,
+            and the <b>software &amp; services</b> that keep the whole thing
+            running. The control system and CMS are ours — that&apos;s the
+            differentiator. The displays are sourced and qualified to work
+            with that control. Pick the tier that fits where you sit in the
+            chain.
           </p>
+          <div className="tier-jump">
+            <a href="#components" className="chip">↓ Tier 1 · Components</a>
+            <a href="#displays" className="chip">↓ Tier 2 · Complete displays</a>
+            <a href="#software" className="chip">↓ Tier 3 · Software &amp; services</a>
+          </div>
         </div>
       </header>
+
+      {/* TIER 1 INTRO */}
+      <section id="components" className="product-section">
+        <div className="container">
+          <div className="tier-page-head">
+            <div className="tier-badge">Tier 1 · Components</div>
+            <h2>For panel makers &amp; integrators</h2>
+            <p>The in-house control electronics and qualified LED modules — sold to people building their own walls.</p>
+          </div>
+        </div>
+      </section>
 
       {/* RX SERIES */}
       <section id="rx" className="product-section">
@@ -265,6 +285,335 @@ export default function ProductsPage() {
         </div>
       </section>
 
+      {/* LED MODULES (Tier 1 finisher) */}
+      <section id="modules" className="product-section alt">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">LED Modules &amp; Cabinets</div>
+              <h2>Panels &amp; cabinets — sourced, qualified, and tuned to PROTON control</h2>
+              <p>
+                For partners who want to assemble their own walls, we supply
+                LED modules and cabinets pre-matched to PROTON receiving
+                cards. SMD, COB and chip-on-board options across pitches from
+                P0.9 to P10, indoor and outdoor.
+              </p>
+              <div className="tagrow">
+                <span className="chip">P0.9 – P10</span>
+                <span className="chip">SMD · COB · MIP</span>
+                <span className="chip">Pre-matched with RX cards</span>
+                <span className="chip">Volume pricing for OEMs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TIER 2 INTRO */}
+      <section id="displays" className="product-section">
+        <div className="container">
+          <div className="tier-page-head">
+            <div className="tier-badge tier-2">Tier 2 · Complete Displays</div>
+            <h2>For integrators &amp; end customers</h2>
+            <p>Five named display families. Each one bundles the LED, the PROTON control, the player and the CMS — ready to install.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* INDOOR */}
+      <section id="indoor" className="product-section alt">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">PROTON Indoor</div>
+              <h2>Fine-pitch indoor walls · P0.9 – P2.5</h2>
+              <p>
+                Seamless walls people stand close to — retail flagships,
+                lobbies, control rooms, broadcast studios and virtual
+                production (XR) stages. Fine-pitch is one of the fastest
+                growing LED segments in India.
+              </p>
+              <div className="tagrow">
+                <span className="chip">P0.9 / P1.2 / P1.5 / P1.8 / P2.5</span>
+                <span className="chip">800–1,200 nits</span>
+                <span className="chip">3,840 Hz refresh</span>
+                <span className="chip">Front service</span>
+              </div>
+            </div>
+          </div>
+          <div className="sku-grid two">
+            <article className="sku">
+              <header><span className="sku-name">Indoor · Standard</span><span className="sku-price">From ₹35,000 / sqft</span></header>
+              <p className="sku-tag">Retail, lobbies, meeting walls</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P1.5 / P1.8 / P2.5"],
+                  ["Brightness", "Up to 800 nits"],
+                  ["Cabinet", "600 × 337.5 mm aluminium"],
+                  ["Service", "Front and rear"],
+                  ["Bundled", "RX cards · TX-1 · Studio · CMS"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">Indoor · Studio / XR</span><span className="sku-price">From ₹85,000 / sqft</span></header>
+              <p className="sku-tag">Broadcast and virtual production</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P0.9 / P1.2"],
+                  ["Brightness", "Up to 1,200 nits"],
+                  ["Refresh", "3,840 Hz / 240 fps"],
+                  ["Camera-friendly", "Genlock + low-latency"],
+                  ["Bundled", "RX-Pro · TX-4K · Studio · CMS"],
+                ]}
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* OUTDOOR */}
+      <section id="outdoor" className="product-section">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">PROTON Outdoor</div>
+              <h2>Outdoor &amp; high-brightness · P3 – P10</h2>
+              <p>
+                Built for sun, rain and the long haul. Billboards, transit
+                hubs, stadium fascias and building facades. IP-rated cabinets,
+                solar-readable brightness, and a service team that travels.
+              </p>
+              <div className="tagrow">
+                <span className="chip">P3 / P4 / P5 / P6 / P8 / P10</span>
+                <span className="chip">5,000–8,500 nits</span>
+                <span className="chip">IP65 front / IP54 rear</span>
+                <span className="chip">100,000-hour LED life</span>
+              </div>
+            </div>
+          </div>
+          <div className="sku-grid two">
+            <article className="sku">
+              <header><span className="sku-name">Outdoor · Fixed</span><span className="sku-price">From ₹18,000 / sqft</span></header>
+              <p className="sku-tag">Billboards and facades</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P4 / P5 / P6 / P8 / P10"],
+                  ["Brightness", "Up to 8,500 nits"],
+                  ["Cabinet", "960 × 960 mm steel, IP65"],
+                  ["Ambient sensor", "Auto-dim by light + time"],
+                  ["Bundled", "RX cards · TX-1 · Cloud monitoring"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">Outdoor · Stadium</span><span className="sku-price">From ₹28,000 / sqft</span></header>
+              <p className="sku-tag">Sports and broadcast-grade outdoor</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P3 / P4"],
+                  ["Brightness", "Up to 7,500 nits"],
+                  ["Refresh", "3,840 Hz / 240 fps"],
+                  ["Camera-friendly", "Yes — sync with OB van"],
+                  ["Bundled", "RX-Pro · TX-4K · Studio · CMS"],
+                ]}
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* RENTAL */}
+      <section id="rental" className="product-section alt">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">PROTON Rental</div>
+              <h2>Rental &amp; staging · P2.6 – P4.8</h2>
+              <p>
+                Fast-lock cabinets for concerts, corporate events and touring
+                shows. Light, curveable, and flight-cased — built to rig fast
+                and tear down faster.
+              </p>
+              <div className="tagrow">
+                <span className="chip">P2.6 / P2.9 / P3.9 / P4.8</span>
+                <span className="chip">Curve ±15°</span>
+                <span className="chip">Fast-lock corners</span>
+                <span className="chip">Flightcase included</span>
+              </div>
+            </div>
+          </div>
+          <div className="sku-grid two">
+            <article className="sku">
+              <header><span className="sku-name">Rental · Indoor</span><span className="sku-price">From ₹48,000 / panel</span></header>
+              <p className="sku-tag">Concerts, conferences, stages</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P2.6 / P2.9 / P3.9"],
+                  ["Cabinet", "500 × 500 mm die-cast aluminium"],
+                  ["Weight", "Under 7 kg per cabinet"],
+                  ["Rigging", "Top + side fast-locks, curve ±15°"],
+                  ["Bundled", "RX-Pro · TX-4K · flightcase (6 panels)"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">Rental · Outdoor</span><span className="sku-price">From ₹62,000 / panel</span></header>
+              <p className="sku-tag">Festivals, sports, outdoor staging</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P3.9 / P4.8"],
+                  ["Brightness", "5,500 nits, IP65 front"],
+                  ["Cabinet", "500 × 1,000 mm waterproof"],
+                  ["Rigging", "Compatible with truss systems"],
+                  ["Bundled", "RX-Pro · TX-4K · Studio · CMS"],
+                ]}
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ALL-IN-ONE */}
+      <section id="all-in-one" className="product-section">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">PROTON All-in-One</div>
+              <h2>Fixed all-in-one displays</h2>
+              <p>
+                Single-SKU, plug-and-play. The display, the player, the
+                control and the CMS all in one unit — for SMBs, QSRs,
+                meeting rooms, hotels and retail counters.
+              </p>
+              <div className="tagrow">
+                <span className="chip">110&quot; meeting wall</span>
+                <span className="chip">Digital posters</span>
+                <span className="chip">LED totems</span>
+                <span className="chip">Android player built-in</span>
+              </div>
+            </div>
+          </div>
+          <div className="sku-grid">
+            <article className="sku">
+              <header><span className="sku-name">Wall 110&quot;</span><span className="sku-price">From ₹6,50,000</span></header>
+              <p className="sku-tag">Meeting and conference walls</p>
+              <SpecTable
+                rows={[
+                  ["Size", "110 inches / 16:9"],
+                  ["Pitch", "P1.5 (FHD) or P1.2 (4K)"],
+                  ["Player", "Android 13 SoC built-in"],
+                  ["Connections", "HDMI / USB-C / Wi-Fi / LAN"],
+                  ["Mount", "Wall mount included"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">Poster</span><span className="sku-price">From ₹2,25,000</span></header>
+              <p className="sku-tag">In-store and lobby signage</p>
+              <SpecTable
+                rows={[
+                  ["Size", "55&quot; / 65&quot; / 75&quot; portrait"],
+                  ["Pitch", "P1.8 indoor"],
+                  ["Brightness", "Up to 800 nits"],
+                  ["Player", "Android 13 SoC built-in"],
+                  ["Stand", "Floor-stand or wall option"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">Totem</span><span className="sku-price">From ₹3,50,000</span></header>
+              <p className="sku-tag">Wayfinding and outdoor counters</p>
+              <SpecTable
+                rows={[
+                  ["Form factor", "Free-standing pillar"],
+                  ["Pitch", "P2.5 indoor / P4 outdoor"],
+                  ["Brightness", "Up to 2,500 nits"],
+                  ["Player", "Android 13 SoC built-in"],
+                  ["Use", "Malls, airports, transit"],
+                ]}
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* CREATIVE */}
+      <section id="creative" className="product-section alt">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">PROTON Creative</div>
+              <h2>Transparent, flexible &amp; COB displays</h2>
+              <p>
+                For design-led installs that need to stand out. Transparent
+                walls for shop windows, flexible modules for curves and
+                columns, and COB ultra-fine pitch for premium retail and
+                architecture.
+              </p>
+              <div className="tagrow">
+                <span className="chip">Transparent · 60–85% see-through</span>
+                <span className="chip">Flexible / curved</span>
+                <span className="chip">COB ultra-fine</span>
+                <span className="chip">Custom shapes</span>
+              </div>
+            </div>
+          </div>
+          <div className="sku-grid">
+            <article className="sku">
+              <header><span className="sku-name">Transparent</span><span className="sku-price">From ₹95,000 / sqft</span></header>
+              <p className="sku-tag">Shop windows, glass walls</p>
+              <SpecTable
+                rows={[
+                  ["Transparency", "60 – 85%"],
+                  ["Pitch", "P3.9 / P7.8"],
+                  ["Brightness", "Up to 5,500 nits"],
+                  ["Weight", "Under 11 kg / sqm"],
+                  ["Mount", "Glass clip or steel frame"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">Flexible / Curved</span><span className="sku-price">From ₹75,000 / sqft</span></header>
+              <p className="sku-tag">Columns, ribbons, curves</p>
+              <SpecTable
+                rows={[
+                  ["Pitch", "P2.5 / P3 / P4"],
+                  ["Bend radius", "Down to 300 mm"],
+                  ["Format", "Tile, ribbon, custom-cut"],
+                  ["Use", "Retail, museums, architecture"],
+                  ["Bundled", "RX-Pro · TX-1 / TX-4K"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">COB Ultra-fine</span><span className="sku-price">From ₹1,10,000 / sqft</span></header>
+              <p className="sku-tag">Premium control rooms, home cinema</p>
+              <SpecTable
+                rows={[
+                  ["Pitches", "P0.9 / P1.2 / P1.5"],
+                  ["Contrast", "5,000:1 with deep blacks"],
+                  ["Surface", "Anti-glare, smudge-resistant"],
+                  ["Heat", "Auto-tuning during runtime"],
+                  ["Bundled", "RX-COB · TX-4K · Studio · CMS"],
+                ]}
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* TIER 3 INTRO */}
+      <section id="software-services" className="product-section">
+        <div className="container">
+          <div className="tier-page-head">
+            <div className="tier-badge tier-3">Tier 3 · Software &amp; Services</div>
+            <h2>To keep your signage running</h2>
+            <p>The PROTON CMS plus install, calibration and AMC — and an optional monthly Signage-as-a-Service plan that bundles it all.</p>
+          </div>
+        </div>
+      </section>
+
       {/* SOFTWARE */}
       <section id="software" className="product-section alt">
         <div className="container">
@@ -327,6 +676,100 @@ export default function ProductsPage() {
               </div>
             </article>
           </div>
+
+          <div className="sku-grid" style={{ marginTop: 20 }}>
+            <article className="sku" style={{ gridColumn: "1 / -1" }}>
+              <header><span className="sku-name">PROTON CMS</span><span className="sku-price">From ₹999 / month per screen</span></header>
+              <p className="sku-tag">Content management for signage networks — built in-house, by us</p>
+              <SpecTable
+                rows={[
+                  ["What it does", "Schedule content, push playlists, manage multi-site networks"],
+                  ["Templates", "Drag-and-drop layouts for retail, QSR, transit, corporate"],
+                  ["Player support", "PROTON SoC built-in, plus Android / Windows / BrightSign"],
+                  ["Multi-site", "Tag screens by city, store, channel — push in one click"],
+                  ["Uptime", "Heartbeat per screen, downtime alerts via email / WhatsApp"],
+                  ["Analytics", "Plays, completion rate, dwell-time integrations"],
+                  ["Hosted in", "Mumbai (India region) · GDPR &amp; DPDP compliant"],
+                ]}
+              />
+              <div className="sku-use">
+                <b>Best for:</b> retail chains, QSR brands, transport
+                authorities, corporate communications, hotel and hospitality
+                groups. Use it standalone or bundled into Signage-as-a-Service.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="product-section">
+        <div className="container">
+          <div className="product-hero">
+            <div>
+              <div className="kicker">Install · Calibration · AMC · SaaS</div>
+              <h2>Services — people you can call</h2>
+              <p>
+                A real install team, real calibrators, and a real AMC. Across
+                India. If you&apos;d rather not own the hardware outright,
+                take the same stack as a monthly Signage-as-a-Service plan.
+              </p>
+              <div className="tagrow">
+                <span className="chip">Pan-India install</span>
+                <span className="chip">On-site calibration</span>
+                <span className="chip">Multi-year AMC</span>
+                <span className="chip">Signage-as-a-Service</span>
+              </div>
+            </div>
+          </div>
+          <div className="sku-grid two">
+            <article className="sku">
+              <header><span className="sku-name">Install &amp; Calibration</span><span className="sku-price">Per-site quote</span></header>
+              <p className="sku-tag">Survey, install, commission</p>
+              <SpecTable
+                rows={[
+                  ["Site survey", "Included for orders over 50 sqft"],
+                  ["Install team", "PROTON-trained crews across major metros"],
+                  ["Commissioning", "Color match, Studio setup, CMS onboarding"],
+                  ["Training", "On-site + recorded for your team"],
+                  ["Sign-off", "Acceptance test report with each install"],
+                ]}
+              />
+            </article>
+            <article className="sku">
+              <header><span className="sku-name">AMC · Annual Maintenance</span><span className="sku-price">From 6% of hardware / year</span></header>
+              <p className="sku-tag">Keep it running</p>
+              <SpecTable
+                rows={[
+                  ["Coverage", "Spares, on-site visits, remote monitoring"],
+                  ["Response", "Next-business-day metros · 72h elsewhere"],
+                  ["Spares", "Stocked locally — modules, cards, PSUs"],
+                  ["Recalibration", "Yearly color tune included"],
+                  ["Term", "1, 3 or 5-year contracts"],
+                ]}
+              />
+            </article>
+          </div>
+          <div className="sku-grid" style={{ marginTop: 20 }}>
+            <article className="sku" style={{ gridColumn: "1 / -1" }}>
+              <header><span className="sku-name">Signage-as-a-Service</span><span className="sku-price">Monthly plan · pricing on request</span></header>
+              <p className="sku-tag">Hardware + CMS + AMC, bundled into one monthly fee</p>
+              <SpecTable
+                rows={[
+                  ["What&apos;s included", "Display, PROTON control, CMS, install, AMC, refresh"],
+                  ["Term", "36 or 60 months · refresh at end of term"],
+                  ["Cash flow", "OpEx instead of CapEx — easier to approve in India"],
+                  ["Scale", "Add screens any time — same monthly contract"],
+                  ["Exit", "Buy-out option at residual value"],
+                ]}
+              />
+              <div className="sku-use">
+                <b>Why we offer this:</b> financing is one of the biggest
+                adoption drivers in Indian digital signage. Managed signage is
+                widely seen as the future of the category.
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -334,11 +777,11 @@ export default function ProductsPage() {
       <section id="contact" className="cta">
         <div className="container">
           <div className="cta-box">
-            <h2>Ready to try one?</h2>
-            <p>Tell us a bit about your wall — cabinet size, pixel pitch, how many you need — and we'll send a sample and a tailored quote.</p>
+            <h2>Spec your install with us.</h2>
+            <p>Tell us about the site — venue, pitch, size, content. We&apos;ll come back with the right tier, a sample where it makes sense, and a quote.</p>
             <div className="hero-cta" style={{ justifyContent: "center" }}>
-              <a className="btn btn-primary" href="/#contact">Request a sample</a>
-              <a className="btn btn-ghost" href="/#market">See the market</a>
+              <a className="btn btn-primary" href="/#contact">Talk to us</a>
+              <a className="btn btn-ghost" href="/solutions">See packaged solutions</a>
             </div>
           </div>
         </div>
@@ -350,6 +793,7 @@ export default function ProductsPage() {
             <a className="brand" href="/"><Mark />PROTON</a>
             <div className="foot-links">
               <a href="/products">Products</a>
+              <a href="/solutions">Solutions</a>
               <a href="/#technology">Why us</a>
               <a href="/#market">Market</a>
               <a href="/resources">Resources</a>

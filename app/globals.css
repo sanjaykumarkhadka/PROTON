@@ -359,3 +359,93 @@ footer { border-top: 1px solid var(--line); padding: 40px 0; color: var(--muted)
 .rcard-foot .coming { color: var(--muted-2); }
 .rcard-cta { color: var(--cyan); font-weight: 600; }
 .rcard-cta:hover { color: var(--text); }
+
+/* ===== Tier headers (on home and /products) ===== */
+.tier-head { margin: 36px 0 22px; display: flex; flex-direction: column; gap: 6px; }
+.tier-head h3 { font-size: clamp(22px, 3vw, 28px); letter-spacing: -0.01em; }
+.tier-head p { color: var(--muted); font-size: 15.5px; max-width: 720px; }
+.tier-badge { display: inline-flex; align-items: center; align-self: flex-start;
+  font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 800;
+  padding: 5px 11px; border-radius: 999px;
+  background: rgba(46,123,255,0.12); color: var(--electric-2);
+  border: 1px solid var(--card-border); }
+.tier-badge.tier-2 { background: rgba(33,200,232,0.12); color: var(--cyan); }
+.tier-badge.tier-3 { background: rgba(43,208,122,0.12); color: var(--green); }
+.tier-note { color: var(--muted); font-size: 13.5px; margin-top: 18px; max-width: 760px; }
+
+/* ===== Tier intro blocks on /products and /solutions ===== */
+.tier-page-head { margin-bottom: 28px; display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
+.tier-page-head h2 { font-size: clamp(26px, 3.6vw, 36px); line-height: 1.1; letter-spacing: -0.01em; margin-top: 4px; }
+.tier-page-head p { color: var(--muted); font-size: 16px; }
+
+/* ===== Tier-jump chips in page header ===== */
+.tier-jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.tier-jump .chip { font-size: 13px; padding: 8px 14px; cursor: pointer;
+  transition: border-color .15s ease, color .15s ease; }
+.tier-jump .chip:hover { border-color: var(--electric-2); color: var(--text); }
+
+/* ===== How-we-grow strip ===== */
+.how-strip { padding: 50px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(46,123,255,0.04), rgba(33,200,232,0.02)); }
+.how-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 900px) { .how-inner { grid-template-columns: 1fr; } }
+.how-step { display: flex; gap: 14px; align-items: flex-start; }
+.how-num { flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%;
+  display: grid; place-items: center; font-weight: 800; font-size: 16px;
+  background: rgba(46,123,255,0.18); color: var(--electric-2);
+  border: 1px solid var(--card-border);
+  font-family: var(--font-mono), ui-monospace, monospace; }
+.how-step h4 { font-size: 16px; margin-bottom: 4px; }
+.how-step p { color: var(--muted); font-size: 14px; }
+.how-note { color: var(--muted-2); font-size: 13px; text-align: center; margin-top: 22px;
+  letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* ===== Pitch x use-case matrix ===== */
+.matrix-wrap { overflow-x: auto; border: 1px solid var(--card-border); border-radius: var(--radius);
+  background: rgba(8,18,36,0.55); }
+.matrix { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 14px; }
+.matrix th, .matrix td { padding: 16px 18px; text-align: left; vertical-align: top;
+  border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.matrix tr:last-child th, .matrix tr:last-child td { border-bottom: none; }
+.matrix th:last-child, .matrix td:last-child { border-right: none; }
+.matrix thead th { background: rgba(46,123,255,0.10); font-weight: 700;
+  color: var(--text); letter-spacing: 0.02em; }
+.matrix tbody th { background: rgba(8,18,36,0.55); color: var(--text); font-weight: 700;
+  width: 180px; }
+.m-pitch { font-size: 13px; color: var(--cyan); letter-spacing: 0.06em; font-weight: 800;
+  text-transform: uppercase; }
+.m-range { font-size: 12.5px; color: var(--muted); margin-top: 3px;
+  font-family: var(--font-mono), ui-monospace, monospace; }
+.m-type { font-weight: 700; color: var(--text); font-size: 14px; }
+.m-note { color: var(--muted); font-size: 12.5px; margin-top: 3px; }
+.matrix td.m-empty .m-type { color: var(--muted-2); }
+.matrix td.m-empty .m-note { color: var(--muted-2); font-style: italic; }
+
+/* ===== Kit cards on /solutions ===== */
+.kits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 1000px) { .kits-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 680px)  { .kits-grid { grid-template-columns: 1fr; } }
+.kit { display: flex; flex-direction: column; gap: 10px; padding: 24px;
+  border-radius: var(--radius); border: 1px solid var(--card-border);
+  background: var(--card); position: relative; overflow: hidden;
+  transition: transform .2s ease, border-color .2s ease; }
+.kit:hover { transform: translateY(-3px); border-color: rgba(46,123,255,0.45); }
+.kit::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, var(--electric-2), var(--cyan)); }
+.kit-blue::before  { background: linear-gradient(90deg, var(--electric-2), var(--cyan)); }
+.kit-cyan::before  { background: linear-gradient(90deg, var(--cyan), #6fe2f5); }
+.kit-green::before { background: linear-gradient(90deg, var(--green), #6ee9a5); }
+.kit-amber::before { background: linear-gradient(90deg, var(--saffron), #ffd07a); }
+.kit-purple::before { background: linear-gradient(90deg, #a26bff, #c79bff); }
+.kit .tag { font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--cyan); font-weight: 700; }
+.kit h3 { font-size: 20px; line-height: 1.25; letter-spacing: -0.01em; }
+.kit-blurb { color: var(--muted); font-size: 14px; }
+.kit-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 8px; }
+.kit-meta > div { display: flex; flex-direction: column; gap: 2px; }
+.kit-meta span { font-size: 11px; color: var(--muted-2); letter-spacing: 0.08em; text-transform: uppercase; }
+.kit-meta b { font-size: 14.5px; color: var(--text);
+  font-family: var(--font-mono), ui-monospace, monospace; }
+.kit-use { font-size: 13px; color: var(--muted); }
+.kit-cta { align-self: flex-start; margin-top: auto; font-size: 13.5px; padding: 9px 16px; }
