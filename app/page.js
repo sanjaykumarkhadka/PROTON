@@ -1,25 +1,5 @@
-function Mark() {
-  return (
-    <svg className="mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true">
-      <defs>
-        <radialGradient id="navnuc" cx="38%" cy="32%" r="70%">
-          <stop offset="0%" stopColor="#7db8ff" />
-          <stop offset="55%" stopColor="#2e7bff" />
-          <stop offset="100%" stopColor="#0f3b7a" />
-        </radialGradient>
-      </defs>
-      <g fill="none" stroke="#4f9dff" strokeWidth="2.6" opacity="0.85">
-        <ellipse cx="32" cy="32" rx="27" ry="11" />
-        <ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(60 32 32)" />
-        <ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(120 32 32)" />
-      </g>
-      <circle cx="59" cy="32" r="3.4" fill="#21c8e8" />
-      <circle cx="18.5" cy="9.6" r="3.4" fill="#4f9dff" />
-      <circle cx="18.5" cy="54.4" r="3.4" fill="#ff9d3d" />
-      <circle cx="32" cy="32" r="9.5" fill="url(#navnuc)" />
-    </svg>
-  );
-}
+import Mark from "./_components/Mark";
+import Nav from "./_components/Nav";
 
 export default function Home() {
   return (
@@ -28,22 +8,7 @@ export default function Home() {
         <div className="grid-overlay" />
       </div>
 
-      {/* NAV */}
-      <nav className="nav">
-        <div className="container nav-inner">
-          <a className="brand" href="#top">
-            <Mark />
-            PROTON
-          </a>
-          <div className="nav-links">
-            <a href="#products">Products</a>
-            <a href="#technology">Technology</a>
-            <a href="#market">Market</a>
-            <a href="#why">Why PROTON</a>
-          </div>
-          <a className="nav-cta" href="#contact">Talk to us</a>
-        </div>
-      </nav>
+      <Nav />
 
       {/* HERO */}
       <header id="top" className="hero">
@@ -144,6 +109,10 @@ export default function Home() {
               <div className="price">Roadmap <b>V1 → V3</b></div>
             </div>
           </div>
+
+          <div className="products-more">
+            <a className="btn btn-ghost" href="/products">See full specs &amp; use cases →</a>
+          </div>
         </div>
       </section>
 
@@ -189,22 +158,22 @@ export default function Home() {
           </div>
           <div className="market">
             <div className="market-card">
-              <h4 style={{ marginBottom: 14, fontSize: 18 }}>Market sizing (India control systems)</h4>
+              <h4 className="card-h">Market sizing (India control systems)</h4>
               <div className="funnel">
                 <div className="frow"><span className="l">TAM — control systems</span><span className="v">₹700–1,000 Cr</span></div>
                 <div className="frow"><span className="l">SAM — segments served</span><span className="v">₹450–650 Cr</span></div>
                 <div className="frow"><span className="l">SOM — Yr-3 obtainable</span><span className="v">₹35–45 Cr</span></div>
               </div>
-              <p style={{ color: "var(--muted)", fontSize: 12.5, marginTop: 14 }}>
+              <p className="card-note">
                 Control electronics ≈ 8–15% of an LED display’s cost (industry estimate). Figures are planning estimates, not a forecast.
               </p>
             </div>
             <div className="market-card">
-              <h4 style={{ marginBottom: 14, fontSize: 18 }}>5-year share of served market</h4>
+              <h4 className="card-h">5-year share of served market</h4>
               <div className="scenario s-cons"><span>Conservative</span><span className="pct">~3% · ₹15–20 Cr</span></div>
               <div className="scenario s-base"><span>Base case</span><span className="pct">~7% · ₹35–45 Cr</span></div>
               <div className="scenario s-agg"><span>Aggressive</span><span className="pct">~12–15% · ₹70–95 Cr</span></div>
-              <p style={{ color: "var(--muted)", fontSize: 13, marginTop: 16 }}>
+              <p className="card-note">
                 Reaching even high-single-digit national share in five years would make
                 PROTON the clear domestic control-systems leader.
               </p>
@@ -247,7 +216,13 @@ export default function Home() {
         <div className="container">
           <div className="foot-inner">
             <a className="brand" href="#top"><Mark />PROTON</a>
-            <div>© {new Date().getFullYear()} PROTON · LED Display Control Systems · Made in India</div>
+            <div className="foot-links">
+              <a href="/products">Products</a>
+              <a href="/#technology">Technology</a>
+              <a href="/#market">Market</a>
+              <a href="/#contact">Contact</a>
+            </div>
+            <div className="foot-copy">© {new Date().getFullYear()} PROTON · Made in India</div>
           </div>
           <p className="disclaimer">
             PROTON is a proposed brand shown for illustration. Product specifications, prices and market figures are

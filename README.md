@@ -20,9 +20,18 @@ npm start            # serve the production build
 ```
 proton-web/
 ├── app/
-│   ├── layout.js     # root layout + SEO metadata
-│   ├── page.js       # the full landing page
-│   └── globals.css   # theme + all styles
+│   ├── _components/
+│   │   ├── Mark.js          # SVG atom-orbit logo mark
+│   │   └── Nav.js           # sticky nav + mobile hamburger drawer (client)
+│   ├── products/
+│   │   └── page.js          # /products — detail page with spec tables
+│   ├── layout.js            # root layout + SEO metadata
+│   ├── page.js              # / — landing page (anchored sections)
+│   ├── icon.svg             # favicon (auto-served by App Router)
+│   └── globals.css          # theme + all styles
+├── public/
+│   ├── logo.svg             # full wordmark + atom (for OG/social)
+│   └── logo-mark.svg        # mark only
 ├── next.config.mjs
 ├── package.json
 └── vercel.json
