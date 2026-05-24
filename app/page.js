@@ -14,19 +14,19 @@ export default function Home() {
       <header id="top" className="hero">
         <div className="container hero-grid">
           <div>
-            <span className="eyebrow">● LED Display Control Systems · Made in India</span>
+            <span className="eyebrow">● LED Display Electronics · Made in India</span>
             <h1>
               The control core of <span className="accent">every screen.</span>
             </h1>
             <p className="lead">
-              PROTON builds the brains behind LED video — receiving cards, sending
-              controllers, video processors and software that turn a wall of LED
-              panels into one calibrated, seamless image. Engineered in India,
-              priced in rupees, supported on the ground.
+              PROTON makes the electronics and software that power LED video walls —
+              the parts inside that turn a wall of LED panels into one big, sharp
+              picture. Designed in India, sold in rupees, supported by people you
+              can actually call.
             </p>
             <div className="hero-cta">
-              <a className="btn btn-primary" href="#products">Explore the products</a>
-              <a className="btn btn-ghost" href="#market">See the market</a>
+              <a className="btn btn-primary" href="#products">See our products</a>
+              <a className="btn btn-ghost" href="#market">Why now</a>
             </div>
           </div>
 
@@ -42,10 +42,10 @@ export default function Home() {
 
         <div className="container">
           <div className="stats">
-            <div className="stat"><div className="num">~55%</div><div className="lab">Target hardware gross margin</div></div>
-            <div className="stat"><div className="num">12–18 mo</div><div className="lab">Concept → mass production</div></div>
-            <div className="stat"><div className="num">₹700–1,000 Cr</div><div className="lab">India control-system TAM</div></div>
-            <div className="stat"><div className="num">BIS-ready</div><div className="lab">Locally certified &amp; stocked</div></div>
+            <div className="stat"><div className="num">~55%</div><div className="lab">Healthy hardware margin</div></div>
+            <div className="stat"><div className="num">12–18 mo</div><div className="lab">From idea to shipping</div></div>
+            <div className="stat"><div className="num">₹700–1,000 Cr</div><div className="lab">India market we serve</div></div>
+            <div className="stat"><div className="num">In stock</div><div className="lab">Local, BIS-ready</div></div>
           </div>
         </div>
       </header>
@@ -54,64 +54,64 @@ export default function Home() {
       <section id="products">
         <div className="container">
           <div className="section-head">
-            <div className="kicker">The product line</div>
-            <h2>One control chain. Built end to end.</h2>
+            <div className="kicker">What we make</div>
+            <h2>Four product families. One job — your wall looks great.</h2>
             <p>
-              A clean, modular portfolio organised around the LED control chain —
-              launching with the RX receiving card and expanding up to controllers,
-              processors and software.
+              A small board that goes inside every panel. A box that drives the
+              whole wall. A bigger box for huge displays. And software that ties
+              it all together.
             </p>
           </div>
 
           <div className="products">
             <div className="pcard">
-              <div className="tag">RX Series · Receiving Cards</div>
-              <h3>The volume product</h3>
-              <p className="sub">The board inside every cabinet that drives the pixels.</p>
+              <div className="tag">RX Series · Inside the panel</div>
+              <h3>The brain inside every panel</h3>
+              <p className="sub">A small board that fits inside every LED cabinet and lights up the pixels.</p>
               <ul>
-                <li><b>RX-1</b> — standard fixed-install card; up to ~512×256 px, 16× HUB75, 14–16 bit greyscale.</li>
-                <li><b>RX-Pro</b> — low-latency, high-bandwidth (5G-class) for rental, xR &amp; broadcast.</li>
-                <li><b>RX-COB</b> — optimised driving for Mini/Micro-LED (COB/MIP) fine pitches.</li>
+                <li><b>RX-1</b> — for everyday signage: shops, offices, lobbies.</li>
+                <li><b>RX-Pro</b> — for studios and rental events where every frame matters.</li>
+                <li><b>RX-COB</b> — for premium, ultra-fine displays you can sit close to.</li>
               </ul>
-              <div className="price">Launch price <b>₹1,500–3,200</b> to integrators</div>
+              <div className="price">From <b>₹1,500</b> per board for integrators</div>
             </div>
 
             <div className="pcard">
-              <div className="tag">TX Series · Sending Controllers</div>
-              <h3>Signal in, walls out</h3>
-              <p className="sub">Scale and distribute video across the whole display.</p>
+              <div className="tag">TX Series · Drives the whole wall</div>
+              <h3>The box that runs the wall</h3>
+              <p className="sub">Takes your video (laptop, camera, player) and sends it to every panel — in sync.</p>
               <ul>
-                <li><b>TX-1</b> — entry sending box; HDMI/DVI in, 4–6× Ethernet out, synchronous control.</li>
-                <li><b>TX-4K</b> — 4K controller; HDMI 2.0 / DP / 3G-SDI in, multi-Gbps Ethernet + optical out.</li>
+                <li><b>TX-1</b> — entry-level box for small and mid-size walls.</li>
+                <li><b>TX-4K</b> — pro box for big 4K walls, tours, and broadcast.</li>
               </ul>
-              <div className="price">Launch price <b>₹35k–1.4L</b></div>
+              <div className="price">From <b>₹35,000</b> per controller</div>
             </div>
 
             <div className="pcard">
-              <div className="tag">ONE &amp; VX · Processing</div>
-              <h3>All-in-one &amp; video processors</h3>
-              <p className="sub">Integrated processing and large multi-window walls.</p>
+              <div className="tag">ONE &amp; VX · Big-wall processing</div>
+              <h3>For huge or multi-source walls</h3>
+              <p className="sub">When the wall is enormous, or you want many videos on it at once.</p>
               <ul>
-                <li><b>PROTON ONE</b> — all-in-one controller: video processing + control in one box (4K→8K).</li>
-                <li><b>PROTON VX</b> — standalone video processor / splicer for large installations.</li>
+                <li><b>PROTON ONE</b> — processor and controller in a single box.</li>
+                <li><b>PROTON VX</b> — separate processor for stadiums, airports, control rooms.</li>
               </ul>
               <div className="price">Roadmap <b>V2</b></div>
             </div>
 
             <div className="pcard">
               <div className="tag">Studio &amp; Cloud · Software</div>
-              <h3>The experience layer</h3>
-              <p className="sub">Setup, calibration and remote management that just works.</p>
+              <h3>Set up &amp; monitor the wall</h3>
+              <p className="sub">Apps that make the hardware easy to install and easy to keep an eye on.</p>
               <ul>
-                <li><b>PROTON Studio</b> — configuration &amp; point-by-point calibration software.</li>
-                <li><b>PROTON Cloud</b> — remote monitoring, fault alerts &amp; content management (subscription).</li>
+                <li><b>PROTON Studio</b> — desktop app to lay out and color-match the wall on-site.</li>
+                <li><b>PROTON Cloud</b> — web dashboard to watch your walls from anywhere.</li>
               </ul>
-              <div className="price">Roadmap <b>V1 → V3</b></div>
+              <div className="price">Studio is included · Cloud is a subscription</div>
             </div>
           </div>
 
           <div className="products-more">
-            <a className="btn btn-ghost" href="/products">See full specs &amp; use cases →</a>
+            <a className="btn btn-ghost" href="/products">See each product in detail →</a>
           </div>
         </div>
       </section>
@@ -120,25 +120,25 @@ export default function Home() {
       <section id="technology">
         <div className="container">
           <div className="section-head">
-            <div className="kicker">Why it looks better</div>
-            <h2>Engineered where it matters most.</h2>
-            <p>The differentiators customers actually feel — uniform colour, fast support, and software that doesn’t fight you.</p>
+            <div className="kicker">Why people pick us</div>
+            <h2>The things that actually matter.</h2>
+            <p>Not specs for the sake of specs — the three things customers feel every day.</p>
           </div>
           <div className="features">
             <div className="feature">
               <div className="ic">◎</div>
-              <h4>Calibration &amp; thermal compensation</h4>
-              <p>Point-by-point brightness and chroma uniformity, with adaptive thermal control to kill colour drift and red-stripe artifacts.</p>
+              <h4>Even color across the wall</h4>
+              <p>Every panel is matched so the wall looks like one screen, not a patchwork of slightly different shades.</p>
             </div>
             <div className="feature">
               <div className="ic">⚡</div>
-              <h4>Bandwidth &amp; low latency</h4>
-              <p>5G-class data paths for high frame rate and high bit depth — ready for rental, virtual production and fine-pitch walls.</p>
+              <h4>Smooth video, no lag</h4>
+              <p>Built for fast-moving content — sports, broadcast, live events. No judder, no flicker on camera.</p>
             </div>
             <div className="feature">
               <div className="ic">🛠</div>
-              <h4>Local support &amp; fast RMA</h4>
-              <p>On-the-ground engineers, on-site calibration help and rapid replacement — the pain point with imported gear, solved.</p>
+              <h4>People you can actually call</h4>
+              <p>Engineers in India. Spares in India. Replacements in days, not months. The pain of imported gear — solved.</p>
             </div>
           </div>
         </div>
@@ -149,33 +149,33 @@ export default function Home() {
         <div className="container">
           <div className="section-head">
             <div className="kicker">The opportunity</div>
-            <h2>An import-dominated market, ready to localise.</h2>
+            <h2>India buys these from abroad today. We want to change that.</h2>
             <p>
-              Almost the entire LED control layer in India is imported today. High
-              tariffs and an LED-first signage shift make a BIS-ready local supplier
-              structurally attractive — that is the gap PROTON fills.
+              Almost every LED display electronics part in India is imported.
+              Rising tariffs and India's electronics push make a local supplier
+              the obvious next move — that's where PROTON fits in.
             </p>
           </div>
           <div className="market">
             <div className="market-card">
-              <h4 className="card-h">Market sizing (India control systems)</h4>
+              <h4 className="card-h">How big is the market?</h4>
               <div className="funnel">
-                <div className="frow"><span className="l">TAM — control systems</span><span className="v">₹700–1,000 Cr</span></div>
-                <div className="frow"><span className="l">SAM — segments served</span><span className="v">₹450–650 Cr</span></div>
-                <div className="frow"><span className="l">SOM — Yr-3 obtainable</span><span className="v">₹35–45 Cr</span></div>
+                <div className="frow"><span className="l">Total India market</span><span className="v">₹700–1,000 Cr</span></div>
+                <div className="frow"><span className="l">Segments we can sell to</span><span className="v">₹450–650 Cr</span></div>
+                <div className="frow"><span className="l">What we can realistically win by Yr 3</span><span className="v">₹35–45 Cr</span></div>
               </div>
               <p className="card-note">
-                Control electronics ≈ 8–15% of an LED display’s cost (industry estimate). Figures are planning estimates, not a forecast.
+                Electronics are about 8–15% of an LED display's cost. Figures are planning estimates, not a forecast.
               </p>
             </div>
             <div className="market-card">
-              <h4 className="card-h">5-year share of served market</h4>
-              <div className="scenario s-cons"><span>Conservative</span><span className="pct">~3% · ₹15–20 Cr</span></div>
-              <div className="scenario s-base"><span>Base case</span><span className="pct">~7% · ₹35–45 Cr</span></div>
-              <div className="scenario s-agg"><span>Aggressive</span><span className="pct">~12–15% · ₹70–95 Cr</span></div>
+              <h4 className="card-h">Where we could be in 5 years</h4>
+              <div className="scenario s-cons"><span>Cautious</span><span className="pct">~3% · ₹15–20 Cr</span></div>
+              <div className="scenario s-base"><span>Most likely</span><span className="pct">~7% · ₹35–45 Cr</span></div>
+              <div className="scenario s-agg"><span>Ambitious</span><span className="pct">~12–15% · ₹70–95 Cr</span></div>
               <p className="card-note">
-                Reaching even high-single-digit national share in five years would make
-                PROTON the clear domestic control-systems leader.
+                Even reaching the middle of that range would make PROTON the clear
+                Indian leader in this space.
               </p>
             </div>
           </div>
@@ -186,13 +186,13 @@ export default function Home() {
       <section id="why">
         <div className="container">
           <div className="section-head">
-            <div className="kicker">Why PROTON wins</div>
-            <h2>Match them on quality. Beat them on everything local.</h2>
+            <div className="kicker">Why PROTON</div>
+            <h2>Match the imports on quality. Beat them on everything local.</h2>
           </div>
           <div className="features">
-            <div className="feature"><div className="ic">📦</div><h4>Availability</h4><p>BIS-ready local stock and predictable INR pricing — no import lead times, customs or forex swings.</p></div>
-            <div className="feature"><div className="ic">🤝</div><h4>Built for OEMs</h4><p>We sell B2B to Indian panel makers and integrators, tailoring firmware and pixel formats to their cabinets.</p></div>
-            <div className="feature"><div className="ic">🇮🇳</div><h4>Policy tailwind</h4><p>Aligned with India’s electronics push (ECMS, DLI) and import-substitution — a market that wants a local champion.</p></div>
+            <div className="feature"><div className="ic">📦</div><h4>In stock, in rupees</h4><p>Local stock. Rupee prices. No customs delays, no currency surprises, no waiting months for spares.</p></div>
+            <div className="feature"><div className="ic">🤝</div><h4>Built for Indian makers</h4><p>We work with Indian panel manufacturers and integrators, tailoring our boards to fit their cabinets and workflow.</p></div>
+            <div className="feature"><div className="ic">🇮🇳</div><h4>Right time, right place</h4><p>India is actively supporting local electronics (ECMS, DLI). The market wants a homegrown option.</p></div>
           </div>
         </div>
       </section>
@@ -201,11 +201,11 @@ export default function Home() {
       <section id="contact" className="cta">
         <div className="container">
           <div className="cta-box">
-            <h2>Let’s put PROTON inside your next wall.</h2>
-            <p>Panel maker, integrator or investor — we’d love to talk. Request an eval kit or a partnership conversation.</p>
+            <h2>Let's put PROTON inside your next wall.</h2>
+            <p>Panel maker, integrator, or investor — we'd love to talk. Ask for a sample, a quote, or a chat.</p>
             <div className="hero-cta" style={{ justifyContent: "center" }}>
-              <a className="btn btn-primary" href="mailto:hello@proton.example">Request an eval kit</a>
-              <a className="btn btn-ghost" href="mailto:hello@proton.example">Partner with us</a>
+              <a className="btn btn-primary" href="mailto:hello@proton.example">Request a sample</a>
+              <a className="btn btn-ghost" href="mailto:hello@proton.example">Have a chat</a>
             </div>
           </div>
         </div>
@@ -218,16 +218,16 @@ export default function Home() {
             <a className="brand" href="#top"><Mark />PROTON</a>
             <div className="foot-links">
               <a href="/products">Products</a>
-              <a href="/#technology">Technology</a>
+              <a href="/#technology">Why us</a>
               <a href="/#market">Market</a>
               <a href="/#contact">Contact</a>
             </div>
             <div className="foot-copy">© {new Date().getFullYear()} PROTON · Made in India</div>
           </div>
           <p className="disclaimer">
-            PROTON is a proposed brand shown for illustration. Product specifications, prices and market figures are
-            planning estimates, not a forecast, quote or guarantee. “Proton” may be a registered trademark of other
-            companies in unrelated classes — verify trademark availability before commercial use.
+            PROTON is a proposed brand shown for illustration. Product details, prices, and market figures are
+            planning estimates — not a quote, datasheet, or guarantee. "Proton" may be a registered trademark of other
+            companies in unrelated classes; verify trademark availability before commercial use.
           </p>
         </div>
       </footer>
